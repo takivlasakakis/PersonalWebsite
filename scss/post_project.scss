@@ -41,10 +41,10 @@
 
 .pagination {
 	text-align: center;
-	margin: 3em 0 0 0;
+	margin: 0 0 3em 0;
 	a, .previous_page, .current, .next_page {
 		padding: .75em 1em;
-		margin: 0 .25em;
+		margin: 0 .5em;
 		border-radius: .15em;
 		line-height: 20px;
 		text-decoration: none;
@@ -53,6 +53,21 @@
 		font-size: .7em;
 		font-style: normal;
 		color: $dark;
+		&:hover {
+			background: $highlight;
+			color: $white;
+		}
 		
+	}
+	.current {
+		background: $highlight;
+		color: $white;
+	}
+	.disabled {
+		color: #C0C0C0;
+		&:hover {
+			color: #C0C0C0;
+			background: $white;
+		} 
 	}
 }
